@@ -1,0 +1,12 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=484
+
+This is just a normal ol plugin; NOT ftplugin (there really should be a plugin option in the type field when adding a new script... *hint* *hint* :) )
+
+This is a quick/simple implimtation to delete duplicate lines (:DDL) and delete blank lines (:DBL)
+
+Both commands can take a range and DEFAULT TO THE ENTIRE FILE.
+Both of these commands delete lines so be carefull!
+
+:DBL (delete blank lines) is little more than a command front end to a :g command.
+:DDL (delete duplicate lines) opens folds,  starts at th top of the range and goes down. For each duplicate line found it is :delete
+End result is you can select a portion of a file and quickily and easily delete blank lines and or delete duplicate lines.
